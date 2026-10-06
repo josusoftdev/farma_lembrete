@@ -1,17 +1,15 @@
-# farma_lembrete
+# Farma Lembrete
 
-A new Flutter project.
+App Flutter com Provider para controle diário de medicamentos.
 
-## Getting Started
+## Como criar o projeto
+1. `flutter create farma_lembrete`
+2. `cd farma_lembrete && flutter pub add provider`
+3. Substitua a pasta `lib/` pelos arquivos deste projeto
+4. `flutter run`
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Conceitos de Provider usados
+- `ChangeNotifier` (MedicamentoProvider) com `notifyListeners()`
+- `ChangeNotifierProvider` no `main.dart`
+- `Consumer`, `context.watch` e `context.read`
+- Estado compartilhado entre Home, Cadastro e Resumo
